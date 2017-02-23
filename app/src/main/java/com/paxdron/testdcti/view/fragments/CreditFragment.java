@@ -1,4 +1,4 @@
-package com.paxdron.testdcti;
+package com.paxdron.testdcti.view.fragments;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.paxdron.testdcti.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CreditCardFragment extends Fragment {
+public class CreditFragment extends Fragment {
 
 
-	public CreditCardFragment() {
+	public CreditFragment() {
 		// Required empty public constructor
 	}
 
@@ -23,7 +25,7 @@ public class CreditCardFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	                         Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		return inflater.inflate(R.layout.fragment_credit_card, container, false);
+		return inflater.inflate(R.layout.fragment_credit, container, false);
 	}
 
 }

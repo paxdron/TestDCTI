@@ -11,9 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.paxdron.testdcti.AnimalsTableAdapter;
-import com.paxdron.testdcti.CartActivity;
 import com.paxdron.testdcti.R;
-import com.paxdron.testdcti.SearchActivity;
 import com.paxdron.testdcti.model.Animal;
 import com.paxdron.testdcti.model.AnimalTable;
 

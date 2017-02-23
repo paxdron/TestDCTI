@@ -1,18 +1,19 @@
-package com.paxdron.testdcti;
+package com.paxdron.testdcti.view;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentTransaction;
-import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.paxdron.testdcti.view.fragments.CartFragment;
+import com.paxdron.testdcti.view.fragments.PaymentFragment;
+import com.paxdron.testdcti.R;
+import com.paxdron.testdcti.view.fragments.ShipingFragment;
 import com.paxdron.testdcti.utils.interfaces.OnFragmentInteractionListener;
-import com.paxdron.testdcti.view.MainActivity;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 

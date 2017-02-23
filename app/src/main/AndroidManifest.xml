@@ -15,9 +15,9 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name=".SearchActivity">
+		<activity android:name=".view.SearchActivity">
 		</activity>
-		<activity android:name=".CartActivity">
+		<activity android:name=".view.CartActivity">
 		</activity>
 	</application>
 

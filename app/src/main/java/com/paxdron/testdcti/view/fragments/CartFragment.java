@@ -1,7 +1,6 @@
-package com.paxdron.testdcti;
+package com.paxdron.testdcti.view.fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.paxdron.testdcti.AnimalsCartAdapter;
+import com.paxdron.testdcti.R;
 import com.paxdron.testdcti.model.Animal;
 import com.paxdron.testdcti.model.AnimalTable;
 import com.paxdron.testdcti.utils.interfaces.OnFragmentInteractionListener;
@@ -19,8 +20,8 @@ import java.util.List;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
-import static com.paxdron.testdcti.CartActivity.FINISH;
-import static com.paxdron.testdcti.CartActivity.SHIPING;
+import static com.paxdron.testdcti.view.CartActivity.FINISH;
+import static com.paxdron.testdcti.view.CartActivity.SHIPING;
 
 
 /**

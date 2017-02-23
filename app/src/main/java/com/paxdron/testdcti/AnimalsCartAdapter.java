@@ -18,7 +18,7 @@ public class AnimalsCartAdapter extends RecyclerView.Adapter<AnimalsCartAdapter.
 
 	List<Animal> animals;
 
-	AnimalsCartAdapter(List<Animal> animals) {
+	public AnimalsCartAdapter(List<Animal> animals) {
 		this.animals = animals;
 	}
 

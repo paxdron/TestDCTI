@@ -1,23 +1,19 @@
-package com.paxdron.testdcti;
+package com.paxdron.testdcti.view.fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.paxdron.testdcti.utils.ViewPageAdapter;
+import com.paxdron.testdcti.R;
 import com.paxdron.testdcti.utils.interfaces.OnFragmentInteractionListener;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
-import static com.paxdron.testdcti.CartActivity.CONFIRM;
-import static com.paxdron.testdcti.CartActivity.PAYMENT;
-import static com.paxdron.testdcti.CartActivity.RETURN;
+import static com.paxdron.testdcti.view.CartActivity.PAYMENT;
+import static com.paxdron.testdcti.view.CartActivity.RETURN;
 
 
 /**
@@ -26,13 +22,13 @@ import static com.paxdron.testdcti.CartActivity.RETURN;
  * {@link OnFragmentInteractionListener} interface
  * to handle interaction events.
  */
-public class PaymentFragment extends Fragment {
+public class ShipingFragment extends Fragment {
 
 	private OnFragmentInteractionListener mListener;
-	private TabLayout tabLayout;
-	private ViewPager viewPager;
+
 	private FancyButton btnBack, btnNext;
-	public PaymentFragment() {
+
+	public ShipingFragment() {
 		// Required empty public constructor
 	}
 
@@ -41,28 +37,26 @@ public class PaymentFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	                         Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		View view= inflater.inflate(R.layout.fragment_payment, container, false);
-		viewPager = (ViewPager)view.findViewById(R.id.viewpager);
-		setupViewPager(viewPager);
+		View view= inflater.inflate(R.layout.fragment_shiping, container, false);
 
-		tabLayout = (TabLayout)view.findViewById(R.id.tabs);
-		tabLayout.setupWithViewPager(viewPager);
 		btnNext=(FancyButton)view.findViewById(R.id.btnNext);
 		btnBack=(FancyButton)view.findViewById(R.id.btnBack);
 		btnBack.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-
+				mListener.onFragmentInteraction(RETURN);
 			}
 		});
 		btnNext.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				mListener.onFragmentInteraction(CONFIRM);
+				mListener.onFragmentInteraction(PAYMENT);
 			}
 		});
+
 		return  view;
 	}
+
 
 	@Override
 	public void onAttach(Context context) {
@@ -80,10 +74,5 @@ public class PaymentFragment extends Fragment {
 		super.onDetach();
 		mListener = null;
 	}
-	private void setupViewPager(ViewPager viewPager) {
-		ViewPageAdapter adapter = new ViewPageAdapter(getFragmentManager());
-		adapter.addFragment(new CreditCardFragment(), "CREDIT CARD");
-		adapter.addFragment(new CreditFragment(), "CREDIT");
-		viewPager.setAdapter(adapter);
-	}
+
 }
