@@ -1,0 +1,50 @@
+<resources>
+	<string name="app_name">TestDCTI</string>
+	<string name="btnSearch">SEARCH</string>
+	<string name="btnSilo">SILO</string>
+	<string name="btnAddToCart">ADD TO CART</string>
+	<string name="naabCode">Naab Code</string>
+	<string name="name">Name</string>
+	<string name="RegName">RegName</string>
+	<string name="tvNoAnimales">No of Animals: %d</string>
+	<string name="btnBack">BACK</string>
+	<string name="title_activity_inicio">InicioActivity</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_settings">Settings</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="Customer">Customer</string>
+	<string name="BU">BU</string>
+	<string name="breed">Breed</string>
+	<string name="gender">Gender</string>
+	<string name="tvInventory">Inventory:</string>
+	<string name="rbInTruck">In Truck</string>
+	<string name="rbRetailSilo">Retail Silo</string>
+	<string name="btnSettings">SETTINGS</string>
+	<string name="btnNext">gotonext</string>
+	<string name="btnDelete">DELETE</string>
+	<string name="btnGotoPayment">GO TO PAYMENT</string>
+	<string name="btnGotoShiping">GO TO SHIPING</string>
+	<string name="noAnimalSel">No Animal Selected</string>
+	<string name="Mail">E-Mail</string>
+	<string name="address">Address</string>
+	<string name="tvShipingType">SHIPING TYPE</string>
+	<string name="standardShip">$10 Standard</string>
+	<string name="ultraShip">$20 Ultra Speed</string>
+	<string name="stndrdTime">1-2 Weeks</string>
+	<string name="ultraTime">1 Day</string>
+	<string name="currentCredit">Current Credit:</string>
+	<string name="Total">Total</string>
+	<string name="btnGotoConfirmation">GO TO CONFIRMATION</string>
+	<string name="tvType">Type:</string>
+	<string name="Visa">Visa</string>
+	<string name="MasterCard">MasterCard</string>
+	<string name="cardNumber">Card Number</string>
+	<string name="month">Month</string>
+	<string name="year">Year</string>
+	<string name="cvv">CVV</string>
+</resources>

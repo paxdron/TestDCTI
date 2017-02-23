@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:fancy="http://schemas.android.com/apk/res-auto"
+             tools:context="com.paxdron.testdcti.PaymentFragment"
+              android:orientation="vertical"
+	>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<mehdi.sakout.fancybuttons.FancyButton
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			fancy:fb_borderColor="#FFFFFF"
+			fancy:fb_borderWidth="1dp"
+			fancy:fb_defaultColor="@color/colorPrimary"
+			fancy:fb_focusColor="@color/colorPrimaryDark"
+			fancy:fb_text="@string/btnBack"
+			fancy:fb_textColor="@color/white"
+			/>
+		<mehdi.sakout.fancybuttons.FancyButton
+			android:id="@+id/btnNext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			fancy:fb_borderColor="#FFFFFF"
+			fancy:fb_borderWidth="1dp"
+			fancy:fb_defaultColor="@color/colorAccent"
+			fancy:fb_focusColor="@color/colorPrimary"
+			fancy:fb_text="@string/btnGotoConfirmation"
+			fancy:fb_textColor="@color/white"
+			android:layout_marginLeft="50dp"
+			/>
+	</LinearLayout>
+
+	<android.support.design.widget.TabLayout
+		android:id="@+id/tabs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:tabGravity="fill"
+		app:tabMode="fixed" />
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</LinearLayout>
